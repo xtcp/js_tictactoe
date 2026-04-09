@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #22262f;
+  border-radius: 0;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+.c9 {
+  margin: auto;
+  width: 12rem;
+}
+.ligne {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 5px;
+  position: relative;
+}
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: #193542;
+  border: 1px solid #09090a;
+
+  font-size: 2rem;
+  text-align: center;
+
+  text-shadow: 4px 4px 3px #22262f;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+}
+.box:hover {
+  filter: hue-rotate(20deg);
+  opacity: 0.8;
+}
+.boxO {
+  color: red;
+}
+.boxX {
+  color: green;
+}
+.message {
+  border: 1px solid #09090a;
+  background-color: #193542;
+  padding: 1rem 1rem;
+  max-width: 30rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  text-align: center;
+}
+.recommencer {
+  border: 1px solid #343838;
+  background-color: #658ea1;
+  padding: 1rem 1rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  max-width: 10rem;
+}
+.recommencer:hover {
+  box-shadow: 2px 6px 10px #000000;
+}
+.box-gagne-ligne::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* middle of row */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  background: red;
+  width: 140%;
+}
+.box-gagne-colonne::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* middle of row */
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  height: 2px;
+  background: red;
+  width: 140%;
+}
+.box-gagne-diag1::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* middle of row */
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  height: 2px;
+  background: red;
+  width: 180%;
+}
+.box-gagne-diag2::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* middle of row */
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  height: 2px;
+  background: red;
+  width: 180%;
+}
+.vert::after {
+  background-color: green;
+}
+.rouge::after {
+  background-color: red;
+}

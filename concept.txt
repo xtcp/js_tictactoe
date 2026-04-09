@@ -1,0 +1,55 @@
+
+	Pour les variables:
+		definir sur la liste
+
+
+	Etapes:
+		Definir le joeur qui commence
+		
+		Quand un joeur clique:
+		\_	A-t-il eu déjè un clique avant?
+				Afficher message/ignorer
+	 
+		\_	À la fin du clique 
+			\_	Verifier si quelqu'un a gagné:
+					Par ligne, par colonne, par diagonal
+	
+			\_	Si non, Afficher X ou OU et changer le tour au joeur prochain
+		
+
+
+	Concepte pour calculer un vinqueur: 
+		Donner des valeurs a chaque "box": 0, 1 ou 2 (1 par defaut)
+			Si la valeur de calcule totale de une ligne/colonne/diag est de 0 (zero) ou 6, quelq'un a gagné
+
+	Function pour verifier a qui est le tour de jouer lancée au debut (peut-être plus tard choisir aleatoirement
+		
+	Ajouter avec un forEach un evenListener pour "ecouter" les cliques sur chaque box
+	\_ á l'interieur de cette function, les verifications si quelq'un a déjà cliqué dessus ou si elle est 'vide' et sinon changer la classe et le texte, passer le tour et verifier si quelq'un a gagné
+	
+
+
+	Function pour verifier si un joeur à gagné, lancée aprés chaque fois que quelqu'un joue
+	\_ Verifier les ligne (for loop avec variable true qui devient false s'il y a une valeur differente)
+	\_ Verifier les colonnes (for loop avec variable true qui devient false s'il y a une valeur differente)
+	\_ Verifier les diagonales (ajouter les valeurs et voir si la valeur totale correspond a 0 ou 6)
+	
+	
+	À changer plus tard: Trouver un moyen de faire les diagonales dinamiques (même si la taille du jeu change).
+	À tester plus tard: Utiliser les valeurs data plutôt qu'une array 2D
+	
+	
+	Design:
+	 Classes pour le X,O.
+	 Classes pour les rayures de ligne quand quelq'un gagne
+	 Div avec messages d'information
+	 
+	 
+	 
+	 
+	 
+
+	 
+	 
+
+		
